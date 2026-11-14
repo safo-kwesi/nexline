@@ -1,0 +1,11 @@
+#secretts
+.env
+.env.*
+
+#editor and system files
+.vscode/
+.DS_Store
+.Thumbs.db
+
+#installed packages
+node_modules/
