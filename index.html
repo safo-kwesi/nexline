@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <script src="config.js"></script>
   <style>
     :root {
       --ink:      #0A0F1E;
@@ -205,7 +206,7 @@
       border:1px solid var(--border);border-radius:6px;
       padding:.75rem 1rem;color:#fff;
       font-family:var(--ff-b);font-size:.9rem;outline:none;
-      transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none;
+      transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;
     }
     .fg select option{background:var(--surface);}
     .fg input:focus,.fg textarea:focus,.fg select:focus{
@@ -399,11 +400,11 @@
       <div class="s-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="#C8D4E3"/></svg></div>
       <div class="s-info"><p class="s-name">GitHub</p><p class="s-handle">@nexline</p></div>
     </a>
-    <a href="https://whatsapp.com/channel/0029Vb9Gfsv17En2B5DH1F3u" target="_blank" rel="noopener" class="social-card reveal" style="transition-delay:.1s">
+    <a href="https://whatsapp.com/channel/nexline" target="_blank" rel="noopener" class="social-card reveal" style="transition-delay:.1s">
       <div class="s-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#25D366"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.306A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 01-4.164-1.17l-.298-.178-3.093.812.825-3.016-.195-.31A7.96 7.96 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z" fill="#25D366"/></svg></div>
       <div class="s-info"><p class="s-name">WhatsApp Channel</p><p class="s-handle">Follow for updates</p></div>
     </a>
-    <a href="https://t.me/nexline1" target="_blank" rel="noopener" class="social-card reveal" style="transition-delay:.2s">
+    <a href="https://t.me/nexline" target="_blank" rel="noopener" class="social-card reveal" style="transition-delay:.2s">
       <div class="s-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.17l-1.685 7.942c-.126.56-.457.697-.928.433l-2.552-1.88-1.228 1.182c-.136.136-.25.25-.512.25l.182-2.6 4.724-4.267c.206-.182-.044-.283-.318-.101L7.6 14.75l-2.5-.782c-.543-.17-.553-.543.113-.803l9.75-3.76c.452-.163.848.11.967.765z" fill="#2AABEE"/></svg></div>
       <div class="s-info"><p class="s-name">Telegram</p><p class="s-handle">@nexline</p></div>
     </a>
@@ -534,10 +535,9 @@
 </div>
 
 <script>
-  // ── BACKEND BASE URL ──
-  const API = 'https://nexline-backend-d65c.onrender.com';
-  // Admin password (hash-checked on backend in production; here we gate the UI)
-  const ADMIN_PW = 'kingkwesi'; // change this
+  // ── CONFIG (loaded from config.js — not committed to GitHub) ──
+  const API      = (typeof CONFIG !== 'undefined' && CONFIG.API)      ? CONFIG.API      : '';
+  const ADMIN_PW = (typeof CONFIG !== 'undefined' && CONFIG.ADMIN_PW) ? CONFIG.ADMIN_PW : '';
 
   // ── SCROLL REVEAL ──
   const reveals = document.querySelectorAll('.reveal');
